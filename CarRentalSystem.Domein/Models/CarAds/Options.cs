@@ -21,7 +21,7 @@
 
         private void Validate(int numberOfSeats)
         {
-            Guard.AgainstOutOfRange<InvalidCarAdExceptions>(
+            Guard.AgainstOutOfRange<InvalidOptionsException>(
                 numberOfSeats, 
                 MinNumberOfSeats, 
                 MaxNumberOfSeats, 
