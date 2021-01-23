@@ -1,4 +1,4 @@
-﻿namespace CarRentalSystem.Domein.Common
+﻿namespace CarRentalSystem.Domain.Common
 {
     public abstract class Entity<TId>
         where TId : struct

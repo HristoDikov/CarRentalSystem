@@ -1,7 +1,7 @@
-﻿namespace CarRentalSystem.Domein.Models.CarAds
+﻿namespace CarRentalSystem.Domain.Models.CarAds
 {
-    using CarRentalSystem.Domein.Common;
-    using CarRentalSystem.Domein.Exceptions;
+    using CarRentalSystem.Domain.Common;
+    using CarRentalSystem.Domain.Exceptions;
 
     using static ModelConstants.Common;
     class CarAd : Entity<int>, IAggregateRoot

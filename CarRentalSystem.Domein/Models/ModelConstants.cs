@@ -1,4 +1,4 @@
-﻿namespace CarRentalSystem.Domein.Models
+﻿namespace CarRentalSystem.Domain.Models
 {
     public class ModelConstants
     {

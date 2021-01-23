@@ -1,5 +1,5 @@
 ﻿
-namespace CarRentalSystem.Domein.Models.CarAds
+namespace CarRentalSystem.Domain.Models.CarAds
 {
     using Common;
     public class TransmissonType : Enumeration

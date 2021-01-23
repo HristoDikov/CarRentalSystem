@@ -1,4 +1,4 @@
-﻿namespace CarRentalSystem.Domein.Exceptions
+﻿namespace CarRentalSystem.Domain.Exceptions
 {
     public class InvalidCarAdExceptions : BaseDomainException
     {

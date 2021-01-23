@@ -1,4 +1,4 @@
-﻿namespace CarRentalSystem.Domein.Common
+﻿namespace CarRentalSystem.Domain.Common
 {
     using System;
     using System.Collections.Concurrent;

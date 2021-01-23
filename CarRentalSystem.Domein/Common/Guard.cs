@@ -1,4 +1,4 @@
-﻿namespace CarRentalSystem.Domein.Common
+﻿namespace CarRentalSystem.Domain.Common
 {
     using Exceptions;
     using System;

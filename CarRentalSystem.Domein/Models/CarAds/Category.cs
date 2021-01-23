@@ -1,6 +1,6 @@
-﻿namespace CarRentalSystem.Domein.Models.CarAds
+﻿namespace CarRentalSystem.Domain.Models.CarAds
 {
-    using CarRentalSystem.Domein.Common;
+    using CarRentalSystem.Domain.Common;
     using Exceptions;
 
     using static ModelConstants.Common;
