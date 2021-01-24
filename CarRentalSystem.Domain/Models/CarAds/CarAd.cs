@@ -37,7 +37,7 @@
 
         public bool IsAvailable { get; private set; }
 
-        private void ChangeAvailability() => this.IsAvailable = !this.IsAvailable;
+        public void ChangeAvailability() => this.IsAvailable = !this.IsAvailable;
 
         private void Validate(string model, string imageUrl, decimal pricePerDay)
         {
