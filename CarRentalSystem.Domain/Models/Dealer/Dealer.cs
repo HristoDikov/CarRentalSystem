@@ -4,7 +4,7 @@
     using Common;
     using Exceptions;
     using System.Collections.Generic;
-
+    using System.Linq;
     using static ModelConstants.Common;
 
     public class Dealer : Entity<int>, IAggregateRoot
@@ -24,6 +24,10 @@
         public string Name { get; }
 
         public PhoneNumber PhoneNumber { get; }
+
+        public IReadOnlyCollection<CarAd> CarAds => this.carAds.ToList().AsReadOnly();
+
+        public void AddCarAd(CarAd carAd) => this.carAds.Add(carAd);
 
         private void Validate(string name)
         {
