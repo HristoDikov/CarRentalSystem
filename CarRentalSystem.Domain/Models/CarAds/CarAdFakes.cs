@@ -16,7 +16,7 @@ namespace CarRentalSystem.Domain.Models.CarAds
                 => new CarAd(
                     new Manufacturer("Some manifacturer"),
                     "Some model",
-                    new Category("Category", "Some description"),
+                    new Category("Category", "Some descriptionSome descriptionSome description"),
                     "https://somevalidUrl.bg",
                     200,
                     new Options(true, 5, TransmissonType.Manual),

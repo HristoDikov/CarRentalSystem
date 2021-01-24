@@ -21,6 +21,15 @@
             this.carAds = new HashSet<CarAd>();
         }
 
+        private Dealer(string name)
+        {
+            this.Name = name;
+            this.PhoneNumber = null!;
+
+            this.carAds = new HashSet<CarAd>();
+        }
+
+
         public string Name { get; }
 
         public PhoneNumber PhoneNumber { get; }

@@ -15,6 +15,14 @@
             this.TransmissionType = transmissonType;
         }
 
+        private Options(bool hasClimateControl, int numberOfSeats)
+        {
+            this.HasClimateControl = hasClimateControl;
+            this.NumberOfSeats = numberOfSeats;
+
+            this.TransmissionType = null!;
+        }
+
         public bool HasClimateControl { get; }
         public int NumberOfSeats { get; }
         public TransmissonType TransmissionType { get; }

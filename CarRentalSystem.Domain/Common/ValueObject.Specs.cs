@@ -23,8 +23,8 @@
         public void ValueObjectsWithDifferentPropertiesShouldNotBeEqual()
         {
             // Arrange
-            var first = new Options(true, 2, TransmissonType.Automatic);
-            var second = new Options(false, 1, TransmissonType.Manual);
+            var first = new Options(true, 3, TransmissonType.Automatic);
+            var second = new Options(false, 2, TransmissonType.Manual);
 
             // Act
             var result = first == second;

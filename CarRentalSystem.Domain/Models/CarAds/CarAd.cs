@@ -23,6 +23,22 @@
             this.IsAvailable = isAvailable;
         }
 
+        private CarAd(
+            string model,
+            string imageUrl,
+            decimal pricePerDay,
+            bool isAvailable)
+        {
+            this.Model = model;
+            this.ImageUrl = imageUrl;
+            this.PricePerDay = pricePerDay;
+            this.IsAvailable = isAvailable;
+
+            this.Manufacturer = null!;
+            this.Category = null!;
+            this.Options = null!;
+        }
+
         public Manufacturer Manufacturer { get; }
 
         public string Model { get; }

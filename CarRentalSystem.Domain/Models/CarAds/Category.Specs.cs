@@ -11,7 +11,7 @@
         {
             // Act
 
-            Action act = () => new Category("SomeCategory", "SomeDescription");
+            Action act = () => new Category("SomeCategory", "SomeDescriptionSomeDescriptionSomeDescription");
 
             // Assert
 
@@ -23,7 +23,7 @@
         {
             // Act
 
-            Action act = () => new Category("", "SomeDescr");
+            Action act = () => new Category("", "SomeDescrSomeDescriptionSomeDescriptionSomeDescription");
 
             //Assert
 

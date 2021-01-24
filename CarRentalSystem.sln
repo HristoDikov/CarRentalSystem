@@ -4,18 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalSystem.Domain", "CarRentalSystem.Domain\CarRentalSystem.Domain.csproj", "{9C990415-14E2-4B84-9082-50BD5F3A231E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0EC76713-CCD7-4BAD-9A78-71F98E1A44A5} = {0EC76713-CCD7-4BAD-9A78-71F98E1A44A5}
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalSystem.Startup", "CarRentalSystem.Startup\CarRentalSystem.Startup.csproj", "{8D5C1C8C-E16A-44C4-88B4-A15B1E1F2FA8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4F46A0FA-6539-4548-9033-88F60B82119E} = {4F46A0FA-6539-4548-9033-88F60B82119E}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalSystem.Web", "CarrRentalSystem.Web\CarRentalSystem.Web.csproj", "{0EC76713-CCD7-4BAD-9A78-71F98E1A44A5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8D5C1C8C-E16A-44C4-88B4-A15B1E1F2FA8} = {8D5C1C8C-E16A-44C4-88B4-A15B1E1F2FA8}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRentalSystem.Infrastructure", "CarRentalSystem.Infrastructure\CarRentalSystem.Infrastructure.csproj", "{4F46A0FA-6539-4548-9033-88F60B82119E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalSystem.Infrastructure", "CarRentalSystem.Infrastructure\CarRentalSystem.Infrastructure.csproj", "{4F46A0FA-6539-4548-9033-88F60B82119E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
