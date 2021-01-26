@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CarRentalSystem.Application.Contracts
+﻿namespace CarRentalSystem.Application.Contracts
 {
-    class IIdentity
+    using Application.Common;
+    using Application.Features.Identity;
+    using System.Threading.Tasks;
+
+    public interface IIdentity
     {
+        Task<Result> Register(UserInputModel userInput);
+
+        Task<Result<LoginOutputModel>> Login(UserInputModel userInput);
     }
 }

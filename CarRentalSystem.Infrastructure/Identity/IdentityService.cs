@@ -9,6 +9,7 @@
     using Application;
     using Application.Contracts;
     using Application.Features.Identity;
+    using CarRentalSystem.Application.Common;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.Options;
     using Microsoft.IdentityModel.Tokens;
@@ -21,7 +22,7 @@
         private readonly ApplicationSettings applicationSettings;
 
         public IdentityService(
-            UserManager<User> userManager, 
+            UserManager<User> userManager,
             IOptions<ApplicationSettings> applicationSettings)
         {
             this.userManager = userManager;
@@ -76,7 +77,7 @@
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(
-                    new SymmetricSecurityKey(key), 
+                    new SymmetricSecurityKey(key),
                     SecurityAlgorithms.HmacSha256Signature)
             };
 
