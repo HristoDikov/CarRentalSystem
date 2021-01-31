@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CarRentalSystem.Application.Features.Identity
+﻿namespace CarRentalSystem.Application.Features.Identity
 {
-   public  class UserInputModel
+    public  class UserInputModel
     {
         public UserInputModel(string email, string password) 
         {

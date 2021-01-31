@@ -23,8 +23,8 @@ namespace CarRentalSystem.Startup
         public void ConfigureServices(IServiceCollection services)
         => services
             .AddDomain()
-            .AddApplication(this.Configuration)
             .AddInfrastructure(this.Configuration)
+            .AddApplication(this.Configuration)
             .AddWebComponents();
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

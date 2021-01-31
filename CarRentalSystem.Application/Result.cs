@@ -1,4 +1,4 @@
-namespace CarRentalSystem.Application.Common
+namespace CarRentalSystem.Application
 {
     using System;
     using System.Collections.Generic;

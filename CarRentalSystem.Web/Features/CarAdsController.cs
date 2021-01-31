@@ -1,34 +1,17 @@
 ﻿namespace CarRentalSystem.Web.Features
 {
     using Microsoft.AspNetCore.Mvc;
-    using System.Collections.Generic;
-    using Domain.Models.CarAds;
-    using System.Linq;
-    using Application.Contracts;
-    using Microsoft.Extensions.Options;
-    using Application;
+    using Application.Features.CarAds.Queries.Search;
+    using System.Threading.Tasks;
 
     [ApiController]
     [Route("[controller]")]
-    public class CarAdsController : ControllerBase
+    public class CarAdsController : ApiController
     {
-        private readonly IRepository<CarAd> carAds;
-        private readonly IOptions<ApplicationSettings> settings;
-
-        public CarAdsController(IRepository<CarAd> carAds, IOptions<ApplicationSettings> settings)
-        {
-            this.carAds = carAds;
-            this.settings = settings;
-        }
-
         [HttpGet]
-        public object Get() => new
-        {
-            Settings = this.settings,
-            CarAds = this.carAds
-            .All()
-            .Where(c => c.IsAvailable)
-            .ToList()
-        };
+        [Route(nameof(Get))]
+        public async Task<ActionResult<SearchCarAdsOutputModel>> Get(
+            [FromQuery] SearchCarAdsQuery query)
+                => await this.Send(query);
     }
 }

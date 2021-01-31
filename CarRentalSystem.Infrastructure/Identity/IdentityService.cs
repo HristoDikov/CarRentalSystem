@@ -9,7 +9,7 @@
     using Application;
     using Application.Contracts;
     using Application.Features.Identity;
-    using CarRentalSystem.Application.Common;
+    using CarRentalSystem.Application.Features.Identity.Commands.LoginUser;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.Options;
     using Microsoft.IdentityModel.Tokens;
